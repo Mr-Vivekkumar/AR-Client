@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AR-Client/static/css/main.38bd574f.css",
+    "main.js": "/AR-Client/static/js/main.9b1228f3.js",
+    "static/js/453.419a5d54.chunk.js": "/AR-Client/static/js/453.419a5d54.chunk.js",
+    "index.html": "/AR-Client/index.html",
+    "main.38bd574f.css.map": "/AR-Client/static/css/main.38bd574f.css.map",
+    "main.9b1228f3.js.map": "/AR-Client/static/js/main.9b1228f3.js.map",
+    "453.419a5d54.chunk.js.map": "/AR-Client/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38bd574f.css",
+    "static/js/main.9b1228f3.js"
+  ]
+}
