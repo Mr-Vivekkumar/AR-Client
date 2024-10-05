@@ -39,7 +39,7 @@ function App() {
           />
 
           {/* Default Route */}
-          {/* <Route path="*" element={<Navigate to={isLoggedIn ? "/dashboard" : "/login"} />} /> */}
+          <Route path="*" element={<Navigate to="/login" />} />
         </Routes>
       </div>
     </Router>
