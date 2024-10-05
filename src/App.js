@@ -28,7 +28,7 @@ function App() {
           />
 
           <Route
-            path="/admin"
+            path="/adminPath"
             element={
               isLoggedIn && userType === "admin" ? (
                 <Admin />
