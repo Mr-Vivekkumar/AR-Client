@@ -28,7 +28,7 @@ function App() {
           />
 
           <Route
-            path="/adminPath"
+            path="/admin"
             element={
               isLoggedIn && userType === "admin" ? (
                 <Admin />
@@ -40,7 +40,7 @@ function App() {
 
           {/* Default Route */}
           <Route path="*" element={<Navigate to="/login" />} />
-        </Routes>
+        </Routes> 
       </div>
     </Router>
   );
