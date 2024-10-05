@@ -6,10 +6,13 @@ import Dashboard from "./components/Dashboard";
 import Admin from "./components/Admin";
 
 function App() {
-  // Check if user is authenticated (for simplicity, using localStorage)
-  const isLoggedIn = localStorage.getItem("loggedIn");
+  // Check if user is authenticated
+  const isLoggedIn = localStorage.getItem("loggedIn") === "true";  // Convert string to boolean
   const userType = localStorage.getItem("userType");
-
+  
+  console.log("isLoggedIn:", isLoggedIn);
+  console.log("userType:", userType);
+  
   return (
     <Router>
       <div className="App">
@@ -25,7 +28,7 @@ function App() {
           />
 
           <Route
-            path="/admin"
+            path="/adminPath"
             element={
               isLoggedIn && userType === "admin" ? (
                 <Admin />
@@ -35,9 +38,8 @@ function App() {
             }
           />
 
-
           {/* Default Route */}
-          <Route path="*" element={<Navigate to={isLoggedIn ? "/dashboard" : "/login"} />} />
+          {/* <Route path="*" element={<Navigate to={isLoggedIn ? "/dashboard" : "/login"} />} /> */}
         </Routes>
       </div>
     </Router>

@@ -28,7 +28,7 @@ function Login() {
         localStorage.setItem("name", response?.data?.name);
         localStorage.setItem("age", response?.data?.age);
         localStorage.setItem("address", response?.data?.address);
-        localStorage.setItem("loggedIn", true);
+        localStorage.setItem("loggedIn", "true");
 
         console.log("Token and userType stored successfully:", {
           token: response?.data?.token,
@@ -41,7 +41,7 @@ function Login() {
         // Await response before navigating
         if (response?.data?.userType?.toLowerCase() === "admin") {
           console.log("Navigating to /admin"); // Before navigate
-          await navigate("/admin"); // Redirect to admin dashboard
+          await navigate("/adminPath"); // Redirect to admin dashboard
           console.log("Navigation to /admin complete"); // After navigate
         } else {
           console.log("Navigating to /dashboard"); // Before navigate
